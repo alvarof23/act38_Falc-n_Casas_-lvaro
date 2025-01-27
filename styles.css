@@ -1,0 +1,199 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .social-links {
+    margin-top: 10px;
+}
+
+header .social-links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header .social-links a:hover {
+    opacity: 0.8;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Columna izquierda (Contacto) */
+.left-column {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.left-column p {
+    margin-bottom: 15px;
+}
+
+.left-column a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.left-column a:hover {
+    text-decoration: underline;
+}
+
+/* Columna derecha (Sobre mí, Educación, Experiencia, etc.) */
+.right-column {
+    width: 65%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos dentro de la columna derecha */
+.right-column h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Listas en la columna derecha */
+.right-column ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.right-column ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo de los puntos en las listas */
+.right-column ul li::before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.right-column ul ul li::before {
+    content: "-";
+    font-size: 1.2rem;
+    color: #333;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.right-column h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header .social-links a {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .right-column h2 {
+        font-size: 1.3rem;
+    }
+}
