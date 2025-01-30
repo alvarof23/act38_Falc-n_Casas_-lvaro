@@ -168,6 +168,27 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.translate-btn {
+    background-color: #ffffff; /* Azul vibrante */
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.translate-btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Pequeño efecto de zoom */
+}
+
+.translate-btn:active {
+    background-color: #003f80; /* Azul más oscuro al hacer clic */
+    transform: scale(0.95);
+}
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .container {
