@@ -25,7 +25,6 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #007bff;
     color: white;
     text-align: center;
     padding: 30px;
@@ -46,6 +45,7 @@ header p {
 
 header .social-links {
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 header .social-links a {
@@ -87,13 +87,8 @@ header .social-links a:hover {
     margin-bottom: 15px;
 }
 
-.left-column a {
+.left-column span {
     color: #007bff;
-    text-decoration: none;
-}
-
-.left-column a:hover {
-    text-decoration: underline;
 }
 
 /* Columna derecha (Sobre mí, Educación, Experiencia, etc.) */
@@ -137,7 +132,6 @@ header .social-links a:hover {
     color: #007bff;
     position: absolute;
     left: 0;
-    top: 0;
 }
 
 
@@ -147,18 +141,16 @@ header .social-links a:hover {
     color: #333;
     position: absolute;
     left: 0;
-    top: 0;
 }
 
 .right-column h3 {
     font-size: 1.2rem;
     color: #333;
-    margin-top: 15px;
 }
 
 /* Pie de página */
 footer {
-    background-color: #007bff;
+    background-color: rgb(26, 27, 36);  
     color: white;
     text-align: center;
     padding: 10px;
@@ -167,21 +159,8 @@ footer {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 .translate-btn {
-    background-color: #ffffff; /* Azul vibrante */
+    background-color: #ffffff;
     color: black;
     border: none;
     padding: 10px 15px;
@@ -192,8 +171,9 @@ footer a:hover {
 }
 
 .translate-btn:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
-    transform: scale(1.05); /* Pequeño efecto de zoom */
+    background-color: #0056b3;
+    transform: scale(1.05);
+    color: whitesmoke
 }
 
 .translate-btn:active {
