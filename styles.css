@@ -85,7 +85,7 @@ h2 {
     text-align: center;
     background-color: rgb(26, 30, 59);
     position: sticky;
-    top:10%;
+    top: 1rem;
 }
 
 .left-column h2 {
