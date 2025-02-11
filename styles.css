@@ -56,6 +56,22 @@ header .social-links a:hover {
     opacity: 0.8;
 }
 
+.translate-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#imgTranslate {
+    width: 40px; /* Ajusta según necesites */
+    height: auto;
+    display: block;
+}
+
+
+
 /* Contenedor principal */
 .container {
     display: grid;
@@ -84,9 +100,11 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: rgb(26, 30, 59);
+    
     position: sticky;
-    top: 1rem;
+    top: 10%;
 }
+
 
 .left-column h2 {
     color: white;
